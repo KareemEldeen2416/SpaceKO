@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -105,12 +108,113 @@
           </Tab>
           <Tab text="Add project">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="136.0" layoutY="46.0" prefHeight="27.0" prefWidth="525.0" promptText="Enter Project Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="27.0" layoutY="50.0" text="Project Name : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="136.0" layoutY="324.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #0097ff;" text="Add" textFill="WHITE">
+                           <font>
+                              <Font name="Corbel Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <TextField layoutX="136.0" layoutY="80.0" prefHeight="27.0" prefWidth="525.0" promptText="Enter Project Leader Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="27.0" layoutY="84.0" text="Leader Name : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="136.0" layoutY="114.0" prefHeight="27.0" prefWidth="525.0" promptText="Enter The Budget Of The Project" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="27.0" layoutY="118.0" text="Budget : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="27.0" layoutY="157.0" text="Target : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextArea layoutX="136.0" layoutY="157.0" prefHeight="130.0" prefWidth="526.0" promptText="Enter Target Of The Project Here" style="-fx-background-color: whtie;" wrapText="true">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
             </content>
           </Tab>
             <Tab text="Edit project">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="150.0" layoutY="23.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;" text="Project Name">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="22.0" layoutY="27.0" text="Project Name : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="323.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #109436;" text="Edit" textFill="WHITE">
+                           <font>
+                              <Font name="Corbel Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <TextField layoutX="150.0" layoutY="59.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;" text="Project Leader Name">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="22.0" layoutY="63.0" text="Leader Name : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="150.0" layoutY="94.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;" text="Budget Of The Project">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="22.0" layoutY="98.0" text="Budget : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="144.0" text="Target : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextArea layoutX="150.0" layoutY="144.0" prefHeight="156.0" prefWidth="526.0" promptText="Enter Target Of The Project Here" style="-fx-background-color: whtie;" wrapText="true">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextArea>
+                        <JFXButton buttonType="RAISED" layoutX="296.0" layoutY="323.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #d1394e; -fx-text-fill: white;" text="Delete">
+                           <font>
+                              <Font name="Corbel Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
               </content>
             </Tab>
         </tabs>

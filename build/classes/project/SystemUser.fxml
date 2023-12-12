@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="638.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.SystemUser">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
+         <font>
+            <Font name="Corbel Bold" size="33.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9545454256462328" endY="0.8106060462128936" startX="0.49621211308421515" startY="0.6742423953432025">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.5921568870544434" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6318948864936829" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField layoutX="145.0" layoutY="124.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="56.0" layoutY="128.0" text="Full Name : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="144.0" layoutY="166.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter Job Title" style="-fx-background-color: white; -fx-border-width: 0px;">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="65.0" layoutY="170.0" text="Job Title : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="144.0" layoutY="206.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="49.0" layoutY="210.0" text="User Name : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="251.0" text="Password : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="289.0" prefHeight="19.0" prefWidth="30.0" text="ID : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="144.0" layoutY="285.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField layoutX="144.0" layoutY="247.0" prefHeight="26.0" prefWidth="431.0" promptText="Password" style="-fx-background-color: white;">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <JFXButton buttonType="RAISED" layoutX="145.0" layoutY="344.0" prefHeight="48.0" prefWidth="131.0" style="-fx-background-color: white;" text="Add">
+         <font>
+            <Font name="Corbel Bold" size="17.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.4810606060606061" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.18000000715255737" green="0.18456852436065674" blue="0.8999999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.13420000672340393" green="0.26039567589759827" blue="0.6100000143051147" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.6459391117095947" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+</AnchorPane>

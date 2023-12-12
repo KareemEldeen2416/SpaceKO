@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.main">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
+         <font>
+            <Font name="Corbel Bold" size="33.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9545454256462328" endY="0.8106060462128936" startX="0.49621211308421515" startY="0.6742423953432025">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.5921568870544434" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6318948864936829" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="52.0" layoutY="85.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Add system user">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="258.0" layoutY="85.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Edit system user">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="462.0" layoutY="85.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missons personnel">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Interships">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="259.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Researchs">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Researchers">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missoins">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Launch vehicles">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Projects">
+         <ripplerFill>
+            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

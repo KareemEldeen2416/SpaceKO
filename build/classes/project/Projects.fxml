@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="730.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.Projects">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
+         <font>
+            <Font name="Corbel Bold" size="33.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9545454256462328" endY="0.8106060462128936" startX="0.49621211308421515" startY="0.6742423953432025">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.5921568870544434" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6318948864936829" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TabPane layoutX="26.0" layoutY="65.0" prefHeight="314.0" prefWidth="552.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="20.80000000000001" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="21.600000000000023" AnchorPane.topAnchor="65.0">
+        <tabs>
+          <Tab text="Projects">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="269.0" prefWidth="415.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="23.0" text="Project Name :">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="202.0" layoutY="19.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="49.0" text="Project No. : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="202.0" layoutY="45.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="75.0" text="Crew : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="101.0" text="Leader : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="202.0" layoutY="71.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="127.0" text="Target : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="202.0" layoutY="97.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="202.0" layoutY="123.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="153.0" text="Budget :  ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="202.0" layoutY="149.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add project">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab text="Edit project">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

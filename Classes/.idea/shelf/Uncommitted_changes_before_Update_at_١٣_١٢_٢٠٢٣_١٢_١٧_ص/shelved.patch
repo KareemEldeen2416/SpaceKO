@@ -1,0 +1,111 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_١٣_١٢_٢٠٢٣_١٢_١٥_ص/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_١٣_١٢_٢٠٢٣_١٢_١٥_ص/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_١٣_١٢_٢٠٢٣_١٢_١٥_ص/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1702419342941)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_١٣_١٢_٢٠٢٣_١٢_١٥_ص/shelved.patch	(date 1702419342941)
+@@ -0,0 +1,101 @@
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0b6e942f-586d-4b3d-b238-aec03662de3c\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Astronaut.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Astronaut.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Gpsdata.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Gpsdata.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Mission.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Mission.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Personnel.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Personnel.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Project.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Project.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Report.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Report.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Research.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Research.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Researcher.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Researcher.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Rocket.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Rocket.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Satellite.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Satellite.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/SpaceShuttle.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/SpaceShuttle.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Track.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Track.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Trainee.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Trainee.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Trainer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Trainer.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Trip.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Trip.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;history&quot;: [\r\n    {\r\n      &quot;searchQuery&quot;: &quot;https://github.com/KareemEldeen2416/SpaceKO.git&quot;,\r\n      &quot;state&quot;: &quot;OPEN&quot;,\r\n      &quot;assignee&quot;: &quot;karimosama7&quot;\r\n    }\r\n  ],\r\n  &quot;lastFilter&quot;: {\r\n    &quot;searchQuery&quot;: &quot;https://github.com/KareemEldeen2416/SpaceKO.git&quot;,\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;karimosama7&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"8f4bd8ed-3be1-48bb-acdf-ad380d9e63f6\" />\r\n        <option name=\"url\" value=\"https://github.com/karimosama7/spacecompany.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2ZLxZTuribqNpSHsI38z6OYkbKF\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;classmain&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/All_Data/java/projects/space company&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <module name=\"space company\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0b6e942f-586d-4b3d-b238-aec03662de3c\" name=\"Changes\" comment=\"\" />\r\n      <created>1702215216629</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1702215216629</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/workspace.xml b/.idea/workspace.xml
++--- a/.idea/workspace.xml	(revision 6b2baa76c7bf4a04f0d0efc2d8dbb8584c8164e1)
+++++ b/.idea/workspace.xml	(date 1702419207031)
++@@ -4,25 +4,7 @@
++     <option name="autoReloadType" value="SELECTIVE" />
++   </component>
++   <component name="ChangeListManager">
++-    <list default="true" id="0b6e942f-586d-4b3d-b238-aec03662de3c" name="Changes" comment="">
++-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Astronaut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Astronaut.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Gpsdata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gpsdata.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mission.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Personnel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personnel.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Report.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Research.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Research.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Researcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Researcher.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rocket.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Satellite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Satellite.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/SpaceShuttle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceShuttle.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Track.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Trainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trainee.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trainer.java" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/src/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trip.java" afterDir="false" />
++-    </list>
+++    <list default="true" id="0b6e942f-586d-4b3d-b238-aec03662de3c" name="Changes" comment="space company classes with java" />
++     <option name="SHOW_DIALOG" value="false" />
++     <option name="HIGHLIGHT_CONFLICTS" value="true" />
++     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++@@ -36,6 +18,7 @@
++     </option>
++   </component>
++   <component name="Git.Settings">
+++    <option name="PUSH_AUTO_UPDATE" value="true" />
++     <option name="RECENT_BRANCH_BY_REPOSITORY">
++       <map>
++         <entry key="$PROJECT_DIR$" value="main" />
++@@ -76,14 +59,22 @@
++     <option name="hideEmptyMiddlePackages" value="true" />
++     <option name="showLibraryContents" value="true" />
++   </component>
++-  <component name="PropertiesComponent">{
++-  &quot;keyToString&quot;: {
++-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++-    &quot;git-widget-placeholder&quot;: &quot;classmain&quot;,
++-    &quot;last_opened_file_path&quot;: &quot;D:/All_Data/java/projects/space company&quot;
+++  <component name="PropertiesComponent"><![CDATA[{
+++  "keyToString": {
+++    "RunOnceActivity.OpenProjectViewOnStart": "true",
+++    "RunOnceActivity.ShowReadmeOnStart": "true",
+++    "git-widget-placeholder": "classmain",
+++    "last_opened_file_path": "D:/All_Data/java/projects/space company",
+++    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+++  },
+++  "keyToStringList": {
+++    "GitStage.ChangesTree.GroupingKeys": [
+++      "directory",
+++      "module",
+++      "repository"
+++    ]
++   }
++-}</component>
+++}]]></component>
++   <component name="RunManager">
++     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++       <option name="MAIN_CLASS_NAME" value="Main" />
++@@ -107,6 +98,15 @@
++       <option name="presentableId" value="Default" />
++       <updated>1702215216629</updated>
++     </task>
+++    <task id="LOCAL؜-٠٠٠٠١" summary="space company classes with java">
+++      <option name="closed" value="true" />
+++      <created>1702418651811</created>
+++      <option name="number" value="٠٠٠٠١" />
+++      <option name="presentableId" value="LOCAL؜-٠٠٠٠١" />
+++      <option name="project" value="LOCAL؜" />
+++      <updated>1702418651811</updated>
+++    </task>
+++    <option name="localTasksCounter" value="2" />
++     <servers />
++   </component>
++   <component name="Vcs.Log.Tabs.Properties">
++@@ -120,4 +120,8 @@
++       </map>
++     </option>
++   </component>
+++  <component name="VcsManagerConfiguration">
+++    <MESSAGE value="space company classes with java" />
+++    <option name="LAST_COMMIT_MESSAGE" value="space company classes with java" />
+++  </component>
++ </project>
++\ No newline at end of file

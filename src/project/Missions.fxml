@@ -1,8 +1,278 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.Missions">
-    
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="789.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.Missions">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
+         <font>
+            <Font name="Corbel Bold" size="33.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9545454256462328" endY="0.8106060462128936" startX="0.49621211308421515" startY="0.6742423953432025">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.5921568870544434" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6318948864936829" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TabPane layoutX="22.0" layoutY="72.0" prefHeight="308.0" prefWidth="558.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="72.0">
+        <tabs>
+          <Tab text="Missions">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="59.0" text="Mission Name : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="203.0" layoutY="55.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="85.0" text="Mission No. : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="111.0" text="Leader : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="203.0" layoutY="81.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="203.0" layoutY="107.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="139.0" text="Progress : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="203.0" layoutY="135.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="165.0" text="Crew : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="194.0" text="Budget : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="203.0" layoutY="161.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="203.0" layoutY="190.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="220.0" text="Start Date : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="203.0" layoutY="216.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="246.0" text="End Date : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="275.0" text="Report : ">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="203.0" layoutY="242.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                           <font>
+                              <Font name="Consolas Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="203.0" layoutY="275.0" prefHeight="154.0" prefWidth="529.0" style="-fx-background-color: white;" text="This report is for a specific mission, and I hope It will give you a new perspective.&#10;" wrapText="true" AnchorPane.bottomAnchor="26.599999999999994" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="11.999999999999886" AnchorPane.topAnchor="275.20000000000005">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add Mission">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="172.0" layoutY="36.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Mission Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="25.0" layoutY="40.0" text="Mission Name : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="172.0" layoutY="69.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Mission Leader" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="25.0" layoutY="73.0" text="Mission Leader : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="172.0" layoutY="102.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Budget" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="25.0" layoutY="106.0" text="Budget : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="172.0" layoutY="135.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Budget" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="25.0" layoutY="139.0" text="Budget : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="170.0" text="Start Date : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="202.0" text="End Date : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <DatePicker layoutX="172.0" layoutY="167.0" promptText="Start Date" />
+                        <DatePicker layoutX="172.0" layoutY="199.0" promptText="End Date" />
+                        <JFXButton buttonType="RAISED" layoutX="172.0" layoutY="333.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #0097ff;" text="Add" textFill="WHITE">
+                           <font>
+                              <Font name="Corbel Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Edit Mission">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="172.0" layoutY="30.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Mission Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="24.0" layoutY="34.0" text="Mission Name : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="172.0" layoutY="68.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Mission Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="24.0" layoutY="72.0" text="Mission Leader : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="172.0" layoutY="105.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Mission Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="24.0" layoutY="109.0" text="Progress : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="172.0" layoutY="141.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Mission Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="24.0" layoutY="145.0" text="Budget : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="181.0" text="Start Date : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="218.0" text="End Date : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <DatePicker layoutX="172.0" layoutY="178.0" />
+                        <DatePicker layoutX="172.0" layoutY="215.0" />
+                        <JFXButton buttonType="RAISED" layoutX="172.0" layoutY="331.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
+                           <font>
+                              <Font name="Corbel Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="321.0" layoutY="331.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #d1394e; -fx-text-fill: white;" text="Delete">
+                           <font>
+                              <Font name="Corbel Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
 </AnchorPane>

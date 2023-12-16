@@ -9,11 +9,11 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.main">
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.main">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
-            <Font name="Corbel Bold" size="33.0" />
+            <Font name="Outfit Bold" size="34.0" />
          </font>
          <textFill>
             <LinearGradient endX="0.9545454256462328" endY="0.8106060462128936" startX="0.49621211308421515" startY="0.6742423953432025">
@@ -50,7 +50,7 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
       <JFXButton buttonType="RAISED" layoutX="258.0" layoutY="85.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Edit system user">
@@ -71,10 +71,10 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="462.0" layoutY="85.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missons personnel">
+      <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="85.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missoins Personnel">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -92,10 +92,10 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Interships">
+      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Interships">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -113,10 +113,10 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="259.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Researchs">
+      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Researchs">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -134,7 +134,7 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
       <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Researchers">
@@ -155,10 +155,10 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missoins">
+      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missions">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -176,10 +176,10 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Launch vehicles">
+      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Launch Vehicles">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -197,7 +197,7 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
       <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Projects">
@@ -218,7 +218,7 @@
             </RadialGradient>
          </ripplerFill>
          <font>
-            <Font name="Corbel Bold" size="16.0" />
+            <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
    </children>

@@ -4,17 +4,15 @@ public class Satellite {
     // Private attributes specific to the Satellite class
     private boolean OnMission;         // Indicates if the satellite is currently on a mission
     private int Id;               // Unique identifier for the satellite
-    private  String MissionName;     // Name of the satellite mission
-    private int MissionDuration;      // Duration of the satellite mission
+    private  String MissionName;     // Name of the satellite mission     // Duration of the satellite mission
     private  Gpsdata Gpsdata;           // Gpsdata object containing GPS information for the satellite
 
     // Constructor for creating a Satellite object
-    public Satellite(boolean onMission, int id, String missionName, int missionDuration, Gpsdata gpsdata){
+    public Satellite(boolean onMission, int id, String missionName, Gpsdata gpsdata){
 
         this.OnMission=onMission;
         this.Id=id;
         this.MissionName=missionName;
-        this.MissionDuration=missionDuration;
         this.Gpsdata=gpsdata;
     }
 
@@ -31,10 +29,7 @@ public class Satellite {
         this.MissionName = MissionName;
     }
 
-    public void setMissionDuration(int MissionDuration) {
-        this.MissionDuration = MissionDuration;
-    }
-
+    
     public void setGpsdata(Gpsdata Gpsdata) {
         this.Gpsdata = Gpsdata;
     }
@@ -52,9 +47,6 @@ public class Satellite {
         return MissionName;
     }
 
-    public int getMissionDuration() {
-        return MissionDuration;
-    }
 
     public Gpsdata getGpsdata() {
         return Gpsdata;

@@ -1,25 +1,15 @@
--- Astronauts and Trips
-CREATE TABLE TRIP(
-	Trip_No INT PRIMARY KEY AUTO_INCREMENT,
-	Trip_Duration INT NOT NULL,
-	Trip_Destination VARCHAR(255) NOT NULL,
-	Trip_Name VARCHAR(255) NOT NULL,
-	Trip_Leader VARCHAR(255) NOT NULL
-);
+-- Astronauts
 CREATE TABLE Astronaut(
 	Astronaut_ID INT PRIMARY KEY AUTO_INCREMENT,
 	Astronaut_Name VARCHAR(255) NOT NULL,
 	Astro_Username VARCHAR(255) UNIQUE NOT NULL,
-	Astro_Passwd VARCHAR(255) NOT NULL, -- Will be treated as a hash.
+	Astro_Passwd VARCHAR(255) NOT NULL,
+	-- Will be treated as a hash.
 	Astro_On_Trip BOOLEAN NOT NULL,
 	Astro_Mission_Name VARCHAR(255) NOT NULL,
 	Trip_Hist VARCHAR(255),
 	Trip_No INT
-
 );
-
--- FOREIGN KEYS:
-ALTER TABLE Astronaut ADD CONSTRAINT FK_ASTRONAUT_TRIP FOREIGN KEY (TRIP_NO) REFERENCES TRIP(Trip_No);
 -- ---------------------------------------------------------------------
 -- Researchers
 CREATE TABLE Researcher(
@@ -38,7 +28,7 @@ CREATE TABLE Research(
 CREATE TABLE Does(
 	Researcher_ID INT,
 	Research_ID INT,
-	PRIMARY KEY(Research_ID,Researcher_ID),
+	PRIMARY KEY(Research_ID, Researcher_ID),
 	FOREIGN KEY(Researcher_ID) REFERENCES Researcher(Researcher_ID),
 	FOREIGN KEY(Research_ID) REFERENCES Research(Research_ID)
 );
@@ -68,11 +58,11 @@ CREATE TABLE Traines(
 	Trainer_ID INT,
 	PRIMARY KEY(Trainee_ID, Trainer_ID),
 	FOREIGN KEY(Trainee_ID) REFERENCES Trainee(Trainee_ID),
-	FOREIGN KEY(Trainer_ID) REFERENCES Trainer(Trainer_ID)
-	-- Many to Many Relationship table
+	FOREIGN KEY(Trainer_ID) REFERENCES Trainer(Trainer_ID) -- Many to Many Relationship table
 );
-
 -- FOREIGN KEYS:
-ALTER TABLE Trainee ADD CONSTRAINT FK_TrackStudied FOREIGN KEY (Track_StudiedID_FK) REFERENCES Track(Track_ID);
-ALTER TABLE Trainer ADD CONSTRAINT FK_TrackTeach FOREIGN KEY (Track_ID_FK) REFERENCES Track(Track_ID);
+ALTER TABLE Trainee
+ADD CONSTRAINT FK_TrackStudied FOREIGN KEY (Track_StudiedID_FK) REFERENCES Track(Track_ID);
+ALTER TABLE Trainer
+ADD CONSTRAINT FK_TrackTeach FOREIGN KEY (Track_ID_FK) REFERENCES Track(Track_ID);
 -- ---------------------------------------------------------------------

@@ -19,12 +19,10 @@ ADD CONSTRAINT FK_Report FOREIGN KEY(FK_Report_ID) REFERENCES Report(Report_ID);
 -- ---------------------------------------------------------------------
 CREATE TABLE Rocket(
     Rocket_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Rocket_PayloadSize INT NOT NULL,
     Rocket_Model VARCHAR(255) NOT NULL,
     Rocket_Cost FLOAT NOT NULL,
     Rocket_Availability BOOLEAN NOT NULL,
     Rocket_VisualComms BOOLEAN NOT NULL,
-    Rocket_StageSeperation INT NOT NULL,
     Rocket_FuelType VARCHAR(255) NOT NULL,
     FK_Mission_ID INT,
     FK_Shuttle_ID INT,
@@ -46,7 +44,6 @@ CREATE TABLE SpaceShuttle(
     Shuttle_ID INT PRIMARY KEY AUTO_INCREMENT,
     Shuttle_Thrust INT NOT NULL,
     Shuttle_CrewCapacity INT NOT NULL,
-    Shuttle_PayloadCapacity INT NOT NULL,
     Shuttle_OrbitVelocity INT NOT NULL,
     FK_GPS_Shuttle VARCHAR(255)
 );

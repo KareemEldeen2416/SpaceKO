@@ -11,8 +11,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="638.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.SystemUser">
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SystemUser">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
@@ -35,7 +34,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <TextField layoutX="145.0" layoutY="124.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+      <TextField fx:id="fullNameInput" layoutX="145.0" layoutY="124.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
@@ -45,7 +44,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="144.0" layoutY="166.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter Job Title" style="-fx-background-color: white; -fx-border-width: 0px;">
+      <TextField fx:id="jobTitleInput" layoutX="144.0" layoutY="166.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter Job Title" style="-fx-background-color: white; -fx-border-width: 0px;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
@@ -55,7 +54,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="144.0" layoutY="206.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+      <TextField fx:id="userNameInput" layoutX="144.0" layoutY="206.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
@@ -75,17 +74,17 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="144.0" layoutY="285.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+      <TextField fx:id="idInput" layoutX="144.0" layoutY="285.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="144.0" layoutY="247.0" prefHeight="26.0" prefWidth="431.0" promptText="Password" style="-fx-background-color: white;">
+      <PasswordField fx:id="passInput" layoutX="144.0" layoutY="247.0" prefHeight="26.0" prefWidth="431.0" promptText="Password" style="-fx-background-color: white;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
       </PasswordField>
-      <JFXButton buttonType="RAISED" layoutX="145.0" layoutY="344.0" prefHeight="48.0" prefWidth="131.0" style="-fx-background-color: white;" text="Add">
+      <JFXButton buttonType="RAISED" layoutX="145.0" layoutY="344.0" onAction="#addUser" prefHeight="48.0" prefWidth="131.0" style="-fx-background-color: white;" text="Add">
          <font>
             <Font name="Corbel Bold" size="17.0" />
          </font>

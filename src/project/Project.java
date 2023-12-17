@@ -25,13 +25,17 @@ public class Project extends Application{
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+    public void start(Stage stage)  {
+        try{
+        Parent root = FXMLLoader.load(getClass().getResource("Reports.fxml"));
         Scene scene = new Scene(root);
         stage.setTitle("Login");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
     }
     
 }

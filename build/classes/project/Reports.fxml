@@ -12,8 +12,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="788.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.Reports">
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Reports">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
@@ -90,7 +89,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="182.0" layoutY="43.0" prefHeight="27.0" prefWidth="527.0" promptText="Enter Report Title" style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="reportTitle" layoutX="182.0" layoutY="43.0" prefHeight="27.0" prefWidth="527.0" promptText="Enter Report Title" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
@@ -100,7 +99,7 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="182.0" layoutY="77.0" prefHeight="27.0" prefWidth="528.0" promptText="Enter Author Name " style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="author" layoutX="182.0" layoutY="77.0" prefHeight="27.0" prefWidth="528.0" promptText="Enter Author Name " style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
@@ -115,12 +114,12 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextArea layoutX="182.0" layoutY="115.0" prefHeight="226.0" prefWidth="528.0" promptText="Enter Target Of The Project Here" style="-fx-background-color: whtie;" wrapText="true">
+                        <TextArea fx:id="content" layoutX="182.0" layoutY="115.0" prefHeight="226.0" prefWidth="528.0" promptText="Enter Target Of The Project Here" style="-fx-background-color: whtie;" wrapText="true">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextArea>
-                        <JFXButton buttonType="RAISED" layoutX="182.0" layoutY="361.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
+                        <JFXButton buttonType="RAISED" layoutX="182.0" layoutY="361.0" onAction="#addReport" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
                            </font>

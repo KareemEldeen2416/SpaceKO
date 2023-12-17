@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class DbConnection {
     
     private static String url = "";
-    private static String dbName = "mydata";
+    private static String dbName = "spaceagencydatabase";
     private static Connection connection;
     
     
@@ -39,18 +39,17 @@ public class DbConnection {
             return true;
             
         }catch(SQLException e){
+            System.out.println(e);
           return false;
         }
     }
     
-    public static void addUser(int id , String fullName , String jobTitle , String userName, String userPassword){
-//        INSERT into systemuser VALUES(9,"Karamela","Teacher","karamela13","13331");
-      if(executeQuery("insert into systemuser values ("+id+",\""+fullName+"\",\""+jobTitle+"\",\""+userName+"\",\""+userPassword+"\");")){
-          System.out.println("Done operation");
-      }else{
-          System.out.println("Error");
-      }
-       
+    public static void addReport(String author , String title ,String content){
+        if(executeQuery("insert into report (Report_Author,Report_Title,Report_String) values (\""+author+"\",\""+title+"\",\""+content+"\");")){
+            System.out.println("A new report added");
+        }else{
+            System.out.println("Error");
+        }
     }
     
 }

@@ -1,5 +1,7 @@
 
 package EntityClasses;
+
+import DBConnection.DbConnection;
 public class Report {
     // Private attributes specific to the Report class
     private  int ReportNumber;               // Unique identifier for the report
@@ -8,8 +10,8 @@ public class Report {
     private  String Content;                 // Content or body of the report
 
     // Constructor for creating a Report object
-    public Report(int ReportNumber,String Title,String Author,String Content){
-        this.ReportNumber=ReportNumber;
+    public Report(String Title,String Author,String Content){
+  
         this.Title=Title;
         this.Author=Author;
         this.Content=Content;
@@ -48,5 +50,13 @@ public class Report {
 
     public String getContent() {
         return Content;
+    }
+    
+    public void addReport(){
+        if(DbConnection.executeQuery("insert into report (Report_Author,Report_Title,Report_String) values (\""+this.Author+"\",\""+this.Title+"\",\""+this.Content+"\");")){
+            System.out.println("A new report added");
+        }else{
+            System.out.println("Error");
+        }
     }
 }

@@ -2,13 +2,12 @@
 CREATE TABLE Astronaut(
 	Astronaut_ID INT PRIMARY KEY AUTO_INCREMENT,
 	Astronaut_Name VARCHAR(255) NOT NULL,
-	Astro_Username VARCHAR(255) UNIQUE NOT NULL,
-	Astro_Passwd VARCHAR(255) NOT NULL,
 	-- Will be treated as a hash.
 	Astro_On_Trip BOOLEAN NOT NULL,
 	Astro_Mission_Name VARCHAR(255) NOT NULL,
-	Trip_Hist VARCHAR(255),
-	Trip_No INT
+	Astro_Mission_id INT NOT NULL,
+	FOREIGN KEY (Astro_Mission_id) REFERENCES Mission(Mission_ID);
+	FOREIGN KEY (Astro_Mission_Name) REFERENCES Mission(Mission_Name);
 );
 -- ---------------------------------------------------------------------
 -- Researchers
@@ -36,7 +35,7 @@ CREATE TABLE Does(
 CREATE TABLE Trainee(
 	Trainee_ID INT PRIMARY KEY AUTO_INCREMENT,
 	Trainee_Name VARCHAR(255) NOT NULL,
-	Trainee_Status VARCHAR(255),
+	Trainee_Status BOOLEAN,
 	Trainee_Passed BOOLEAN,
 	Track_StudiedID_FK INT
 );
@@ -45,13 +44,13 @@ CREATE TABLE Trainer(
 	Trainer_Name VARCHAR(255) NOT NULL,
 	Trainer_Username VARCHAR(255) UNIQUE NOT NULL,
 	Trainer_Passwd VARCHAR(255) NOT NULL,
-	No_Of_Trainees INT NOT NULL,
 	Track_ID_FK INT
 );
 CREATE TABLE Track(
 	Track_ID INT PRIMARY KEY AUTO_INCREMENT,
 	Track_Name VARCHAR(255) NOT NULL,
-	Track_Duration INT NOT NULL
+	Track_Duration INT NOT NULL,
+	No_Of_Trainees INT NOT NULL
 );
 CREATE TABLE Traines(
 	Trainee_ID INT,

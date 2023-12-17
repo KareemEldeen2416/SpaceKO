@@ -27,8 +27,5 @@ public class SystemUser implements Initializable{
         System.out.println("System users shown");
     }
     
-    public void addUser(){
-        DbConnection.addUser(Integer.parseInt(idInput.getText()),fullNameInput.getText(),jobTitleInput.getText(),userNameInput.getText(),passInput.getText());
-    }
     
 }

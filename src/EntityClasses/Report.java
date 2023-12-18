@@ -52,6 +52,7 @@ public class Report {
         return Content;
     }
     
+    
     public void addReport(){
         if(DbConnection.executeQuery("insert into report (Report_Author,Report_Title,Report_String) values (\""+this.Author+"\",\""+this.Title+"\",\""+this.Content+"\");")){
             System.out.println("A new report added");

@@ -7,9 +7,9 @@ public class Trainer extends Personnel{
     private int NumberofTraninees;              // Number of trainees under the trainer
 
     // Constructor to initialize the Trainer object
-    public  Trainer(int id,String name,String jobTitle,String userName,String password,String track,int numberofTraninees){
+    public  Trainer(String name,String jobTitle,String userName,String password,String track,int numberofTraninees){
         // Call the constructor of the superclass (Personnel) using super()
-        super(id,name,jobTitle,userName,password);
+        super(name,jobTitle,userName,password);
         // Initialize Trainer-specific attributes
         this.NumberofTraninees=numberofTraninees;
         this.Track=track;

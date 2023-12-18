@@ -1,67 +1,60 @@
 
 package EntityClasses;
 
-import java.util.ArrayList;
-import java.util.List;
+import DBConnection.DbConnection;
 // Class representing an astronaut, extending from the Personnel class
-public class Astronaut extends Personnel{
+public class Astronaut {
     // Private member variables to store astronaut-specific information
-    private boolean OnTrip;          // Variable to determine if the astronaut is currently on a trip
-    private int TripNumber;      // Current trip number
-    private String MissionName;    // Current mission name
-    private List<String>TripHistory;       // List to store the history of trips
+             // Variable to determine if the astronaut is currently on a trip
+          // Current trip number
+    
+    private String AstroName;    
+    private int MissionID;     
+    private int AstroID;
 
 
     // Constructor to initialize astronaut information, taking information about the astronaut and passing it to the superclass constructor (Personnel)
-    public Astronaut(int id,String name,String jobTitle,String userName,String password,boolean onTrip,int tripNumber,String missionName){
-        super(id,name,jobTitle,userName,password);
-        this.OnTrip=onTrip;
-        this.TripNumber=tripNumber;
-        this.MissionName=missionName;
-        TripHistory=new ArrayList<>();
-
+    public Astronaut(String AstroName,int MissionID){
+        
+        this.AstroName = AstroName;
+        this.MissionID = MissionID;
     }
 
-    // Setter methods to update astronaut information
-    public void setMissionName(String MissionName) {
-        this.MissionName = MissionName;
+    public String getAstroName() {
+        return AstroName;
     }
 
-    public void setOnTrip(boolean OnTrip) {
-       this.OnTrip = OnTrip;
+    public void setAstroName(String AstroName) {
+        this.AstroName = AstroName;
     }
 
-    public void setTripNumber(int TripNumber) {
-        this.TripNumber = TripNumber;
+    public int getMissionID() {
+        return MissionID;
     }
 
-    public void setTripHistory(List<String> TripHistory) {
-        // Using a new ArrayList to avoid direct modification of the provided list
-        this.TripHistory = new ArrayList<>(TripHistory);
+    public void setMissionID(int MissionID) {
+        this.MissionID = MissionID;
     }
 
-    // Getter methods to retrieve astronaut information
-    public String getMissionName() {
-        return MissionName;
+    public int getAstroID() {
+        return AstroID;
     }
 
-    // Method to check if the astronaut is currently on a trip
-    public boolean isOnTrip() {
-        return OnTrip;
+    public void setAstroID(int AstroID) {
+        this.AstroID = AstroID;
     }
 
-    public int getTripNumber() {
-        return TripNumber;
+    
+    
+    
+    public void addAstronaut(){
+         if(DbConnection.executeQuery("insert into astronaut (Astronaut_Name,Astro_Mission_id) values (\""+this.AstroName+"\",\""+this.MissionID+"\");")){
+            System.out.println("A new Astronaut added");
+        }else{
+            System.out.println("Error");
+        }
     }
-    public List<String> getTripHistory() {
-        // Using a new ArrayList to avoid exposing the internal list directly
-        return new ArrayList<>(this.TripHistory);
-    }
-
-    // Method to add a new entry to the trip history
-    public void addTripHistory(String tripHistory) {
-        TripHistory.add(tripHistory);
-    }
+   
 
 
 }

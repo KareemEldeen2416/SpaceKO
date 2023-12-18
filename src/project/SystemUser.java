@@ -27,5 +27,9 @@ public class SystemUser implements Initializable{
         System.out.println("System users shown");
     }
     
+    public void addUser(){
+    
+    }
+    
     
 }

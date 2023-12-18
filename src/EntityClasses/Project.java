@@ -1,19 +1,18 @@
 
 package EntityClasses;
+import DBConnection.DbConnection;
 public class Project {
     // Private attributes specific to the Project class
     private int ProjectNumber;    // Unique identifier for the project
-    private String ProjectName;   // Name or title of the project
-    private int CrewNumber;       // Number of crew members in the project
+    private String ProjectName;   // Name or title of the project       // Number of crew members in the project
     private String Leader;        // Leader or manager of the project
     private String Target;        // Target or objective of the project
     private Float Budget;         // Budget allocated for the project
 
     // Constructor for creating a Project object
-    public  Project( int ProjectNumber,String ProjectName,int CrewNumber,String Leader,String Target,Float Budget){
-        this.ProjectNumber=ProjectNumber;
+    public  Project(String ProjectName,String Leader,String Target,Float Budget){
+        
         this.ProjectName=ProjectName;
-        this.CrewNumber=CrewNumber;
         this.Leader=Leader;
         this.Target=Target;
         this.Budget=Budget;
@@ -28,9 +27,7 @@ public class Project {
         this.ProjectName = ProjectName;
     }
 
-    public void setCrewNumber(int CrewNumber) {
-        this.CrewNumber = CrewNumber;
-    }
+    
 
     public void setTarget(String Target) {
         this.Target = Target;
@@ -53,9 +50,6 @@ public class Project {
         return ProjectName;
     }
 
-    public int getCrewNumber() {
-        return CrewNumber;
-    }
 
     public String getLeader() {
         return Leader;
@@ -68,4 +62,14 @@ public class Project {
     public Float getBudget() {
         return Budget;
     }
+    
+    public void addProject(){
+         if(DbConnection.executeQuery("insert into project (Project_Name,Project_Leader,Project_Target,Project_Budget) VALUES (\""
+                 +this.ProjectName+"\",\""+this.Leader+"\",\""+this.Target+"\",\""+this.Budget+"\");")){
+            System.out.println("A new Project added");
+        }else{
+            System.out.println("Error");
+        }
+    }
+    
 }

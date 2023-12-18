@@ -8,8 +8,8 @@ public class Researcher extends Personnel {
     private boolean Available;     // Variable to determine if the researcher is currently available
 
     // Constructor to initialize researcher information, taking information about the researcher and passing it to the superclass constructor (Personnel)
-    public Researcher(int id,String name,String jobTitle,String userName,String password,String topic,String speciality,boolean avilable){
-        super(id,name,jobTitle,userName,password);
+    public Researcher(String name,String jobTitle,String userName,String password,String topic,String speciality,boolean avilable){
+        super(name,jobTitle,userName,password);
         this.Topic=topic;
         this.Speciality=speciality;
         this.Available=avilable;

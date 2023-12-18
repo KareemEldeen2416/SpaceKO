@@ -1,5 +1,7 @@
 
 package EntityClasses;
+
+import DBConnection.DbConnection;
 public class Mission {
     // Private attributes specific to the Mission class
     private String MissionName;     // Name or title of the mission
@@ -7,16 +9,15 @@ public class Mission {
     private int MissionProgress;    // Progress of the mission
     private String Leader;          // Leader or manager of the mission
     private Float Budget;           // Budget allocated for the mission
-    private Report Report;          // Report object containing information about the mission
+    private int ReportID;          // Report object containing information about the mission
 
     // Constructor for creating a Mission object
-    public Mission(String MissionName, int MissionId, int MissionProgress, String Leader, Float Budget, Report Report) {
+    public Mission(String MissionName, int MissionProgress, String Leader, Float Budget, int ReportID) {
         this.MissionName = MissionName;
-        this.MissionId = MissionId;
         this.MissionProgress = MissionProgress;
         this.Leader = Leader;
         this.Budget = Budget;
-        this.Report = Report;
+        this.ReportID = ReportID;
     }
 
     // Setter methods for updating the values of attributes
@@ -40,8 +41,8 @@ public class Mission {
         this.Budget = Budget;
     }
 
-    public void setReport(Report Report) {
-        this.Report = Report;
+    public void setReport(int ReportID) {
+        this.ReportID = ReportID;
     }
 
     // Getter methods for retrieving the values of attributes
@@ -65,7 +66,17 @@ public class Mission {
         return Budget;
     }
 
-    public Report getReport() {
-        return Report;
+    public int getReport() {
+        return ReportID;
+    }
+    
+//    insert into mission (Mission_Name,Mission_Leader,Mission_Budget,Mission_Progress,FK_Report_ID) values ("Mars Exploration","Omar",25000.0,0,2);
+    public void addMission(){
+        if(DbConnection.executeQuery("insert into mission (Mission_Name,Mission_Leader,Mission_Budget,Mission_Progress,FK_Report_ID) values (\""
+                +this.MissionName+"\",\""+this.Leader+"\",\""+this.Budget+"\",\""+this.MissionProgress+"\",\""+this.ReportID+"\");")){
+            System.out.println("A new Mission added");
+        }else{
+            System.out.println("Error");
+        }
     }
 }

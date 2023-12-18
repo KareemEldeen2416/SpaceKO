@@ -11,8 +11,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="788.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.MissionsPersonnel">
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.MissionsPersonnel">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
@@ -61,7 +60,7 @@
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="78.0" text="On Mission: ">
+                        <Label layoutX="14.0" layoutY="78.0" text="Mission Name : ">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
@@ -71,22 +70,12 @@
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="104.0" text="Mission Name :">
+                        <Label layoutX="14.0" layoutY="104.0" text="Mission No. : ">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
                         </Label>
                         <Label layoutX="192.0" layoutY="100.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
-                           <font>
-                              <Font name="Consolas Bold" size="15.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="14.0" layoutY="130.0" text="Mission No. :">
-                           <font>
-                              <Font name="Corbel Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="192.0" layoutY="126.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
                            <font>
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
@@ -99,7 +88,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="202.0" layoutY="30.0" prefHeight="27.0" prefWidth="478.0" promptText="Track Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="astroName" layoutX="202.0" layoutY="30.0" prefHeight="27.0" prefWidth="478.0" promptText=" Enter Astronaut Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
@@ -109,27 +98,17 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="202.0" layoutY="64.0" prefHeight="27.0" prefWidth="478.0" promptText="Track Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="missionNo" layoutX="202.0" layoutY="64.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Mission No." style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
-                        <Label layoutX="42.0" layoutY="68.0" text="Mission Name : ">
+                        <Label layoutX="42.0" layoutY="68.0" text="Mission No. : ">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="202.0" layoutY="98.0" prefHeight="27.0" prefWidth="478.0" promptText="Track Name" style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="42.0" layoutY="102.0" text="Mission No. : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <JFXButton buttonType="RAISED" layoutX="202.0" layoutY="306.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
+                        <JFXButton buttonType="RAISED" layoutX="202.0" layoutY="306.0" onAction="#addAstronaut" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
                            </font>

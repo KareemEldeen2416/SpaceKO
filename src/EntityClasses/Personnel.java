@@ -1,18 +1,20 @@
 package EntityClasses;
 
+
+import DBConnection.DbConnection;
+
 // Class representing personnel
 public class Personnel {
     // Private member variables to store personnel information
-    private int Id;
+     private int Id;
      private  String Name;
      private  String JobTitle;
      private String UserName;
      private String Password;
 
     // Constructor to initialize personnel information
-    public  Personnel(int id,String name,String jobTitle,String userName,String password){
+    public  Personnel(String name,String jobTitle,String userName,String password){
          this.Name=name;
-         this.Id=id;
          this.JobTitle=jobTitle;
          this.UserName=userName;
          this.Password=password;
@@ -57,5 +59,13 @@ public class Personnel {
 
     public String getPassword() {
         return Password;
+    }
+    
+    public void addSystemUser(){
+        if(DbConnection.executeQuery("insert into")){
+            System.out.println("A new report added");
+        }else{
+            System.out.println("Error");
+        }
     }
 }

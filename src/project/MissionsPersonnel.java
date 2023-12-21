@@ -5,7 +5,8 @@
 package project;
 
 import DBConnection.DbConnection;
-import EntityClasses.Astronaut;
+import EntityClasses.*;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -19,17 +20,24 @@ import javafx.scene.control.TextField;
 public class MissionsPersonnel implements Initializable{
     
     @FXML
-    TextField astroName,missionNo;
+    TextField astroName,crewMemberName,crewMissionID;
     
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         System.out.println("Missions Personnel window opens");
+        DbConnection.executeQuery("select * from mission");
     }
     
     public void addAstronaut(){
-        Astronaut astro = new Astronaut(astroName.getText(),Integer.parseInt(missionNo.getText()));
-        astro.addAstronaut();
+       Astronaut astro = new Astronaut(astroName.getText());
+       astro.addAstronaut();
     }
+    
+    public void addCrewMember(){
+        
+    }
+    
+    
     
 }

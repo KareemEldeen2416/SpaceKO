@@ -18,7 +18,7 @@ import javafx.scene.control.TextField;
 public class Missions implements Initializable{
     
     @FXML
-    TextField missionName,missionLeader,missionBudget,reportID;
+    TextField missionName,missionLeader,missionBudget;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -26,7 +26,7 @@ public class Missions implements Initializable{
     }
     
     public void addMission(){
-        Mission mission = new Mission(missionName.getText(),0,missionLeader.getText(),Float.parseFloat(missionBudget.getText()),Integer.parseInt(reportID.getText()));
+        Mission mission = new Mission(missionName.getText(),0,Integer.parseInt(missionLeader.getText()),Float.parseFloat(missionBudget.getText()));
         mission.addMission();
     }
     

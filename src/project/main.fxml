@@ -137,7 +137,7 @@
             <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Researchers">
+      <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Reports">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>

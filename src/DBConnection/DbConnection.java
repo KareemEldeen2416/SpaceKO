@@ -9,6 +9,8 @@ import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 /**
  *
  * @author KareemEldeen
@@ -44,12 +46,16 @@ public class DbConnection {
         }
     }
     
-    public static void addReport(String author , String title ,String content){
-        if(executeQuery("insert into report (Report_Author,Report_Title,Report_String) values (\""+author+"\",\""+title+"\",\""+content+"\");")){
-            System.out.println("A new report added");
-        }else{
-            System.out.println("Error");
-        }
+    
+    public static ResultSet executeFetchQuery(String stmtQuery) throws SQLException{
+        setConnection();    
+        Statement stmt = connection.createStatement();
+        ResultSet rs = stmt.executeQuery(stmtQuery);
+        return rs;
     }
+    
+    
+    
+    
     
 }

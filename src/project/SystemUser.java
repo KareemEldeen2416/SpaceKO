@@ -4,6 +4,7 @@
  */
 package project;
 import DBConnection.DbConnection;
+import EntityClasses.User;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -18,7 +19,7 @@ import javafx.scene.control.TextField;
 public class SystemUser implements Initializable{
 
     @FXML
-    TextField fullNameInput,jobTitleInput,userNameInput,idInput;
+    TextField fullNameInput,userNameInput;
     @FXML
     PasswordField passInput;
     
@@ -28,7 +29,8 @@ public class SystemUser implements Initializable{
     }
     
     public void addUser(){
-    
+        User user = new User(fullNameInput.getText(),userNameInput.getText(),passInput.getText());
+        user.addUser();
     }
     
     

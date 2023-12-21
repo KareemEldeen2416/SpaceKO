@@ -88,22 +88,12 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="astroName" layoutX="202.0" layoutY="30.0" prefHeight="27.0" prefWidth="478.0" promptText=" Enter Astronaut Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="astroName" layoutX="202.0" layoutY="30.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Astronaut Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
                         <Label layoutX="42.0" layoutY="34.0" text="Astronaut Name : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="missionNo" layoutX="202.0" layoutY="64.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Mission No." style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="42.0" layoutY="68.0" text="Mission No. : ">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
@@ -217,7 +207,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="192.0" layoutY="23.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Member Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="crewMemberName" layoutX="192.0" layoutY="23.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Member Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
@@ -227,37 +217,17 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="192.0" layoutY="57.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Job Title" style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="crewMissionID" layoutX="192.0" layoutY="57.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Mission No." style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
-                        <Label layoutX="37.0" layoutY="61.0" text="Job Title : ">
+                        <Label layoutX="37.0" layoutY="61.0" text="Mission No. : ">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="192.0" layoutY="91.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Mission Name" style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="37.0" layoutY="95.0" text="Mission Name : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <TextField layoutX="192.0" layoutY="125.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Mission No." style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="37.0" layoutY="129.0" text="Mission No. : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <JFXButton buttonType="RAISED" layoutX="192.0" layoutY="290.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
+                        <JFXButton buttonType="RAISED" layoutX="192.0" layoutY="290.0" onAction="#addCrewMember" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
                            </font>

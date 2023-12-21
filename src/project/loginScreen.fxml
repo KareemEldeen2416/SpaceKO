@@ -60,7 +60,7 @@
             </RadialGradient>
          </ripplerFill>
       </JFXButton>
-      <TextField fx:id="userNameInput" layoutX="109.0" layoutY="148.0" prefHeight="26.0" prefWidth="431.0" promptText="User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+      <TextField fx:id="userNameInput" layoutX="109.0" layoutY="148.0" prefHeight="26.0" prefWidth="431.0" promptText="User Name" style="-fx-background-color: white;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>

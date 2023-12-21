@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -11,8 +10,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="787.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.EditUser">
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="577.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.EditUser">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
@@ -35,30 +33,12 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <TextField layoutX="88.0" layoutY="83.0" prefHeight="33.0" prefWidth="474.0" promptText="Search" style="-fx-background-color: white; -fx-border-width: 0px;">
+      <TextField fx:id="searchInput" layoutX="89.0" layoutY="82.0" prefHeight="33.0" prefWidth="474.0" promptText="Search" style="-fx-background-color: white; -fx-border-width: 0px;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
       </TextField>
-      <JFXComboBox labelFloat="true" layoutX="570.0" layoutY="86.0" prefHeight="26.0" prefWidth="112.0" promptText="Search By">
-         <focusColor>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.33934077620506287" green="0.2574000060558319" blue="0.6600000262260437" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.0555555559694767" green="0.5120370388031006" blue="1.0" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </focusColor>
-      </JFXComboBox>
-      <TextField layoutX="176.0" layoutY="174.0" prefHeight="27.0" prefWidth="506.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;">
+      <TextField fx:id="fullName" layoutX="201.0" layoutY="174.0" prefHeight="27.0" prefWidth="506.0" promptText="Full Name" style="-fx-background-color: white; -fx-border-width: 0px;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
@@ -68,52 +48,37 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="175.0" layoutY="216.0" prefHeight="27.0" prefWidth="506.0" promptText="Enter Job Title" style="-fx-background-color: white; -fx-border-width: 0px;">
+      <TextField fx:id="userName" layoutX="201.0" layoutY="229.0" prefHeight="27.0" prefWidth="506.0" promptText="User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
       </TextField>
-      <Label layoutX="96.0" layoutY="220.0" text="Job Title : ">
+      <Label layoutX="82.0" layoutY="233.0" text="User Name : ">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="175.0" layoutY="256.0" prefHeight="27.0" prefWidth="506.0" promptText="Enter User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
-         <font>
-            <Font name="Consolas Bold" size="14.0" />
-         </font>
-      </TextField>
-      <Label layoutX="80.0" layoutY="260.0" text="User Name : ">
+      <Label layoutX="87.0" layoutY="289.0" text="Password : ">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="89.0" layoutY="301.0" text="Password : ">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="128.0" layoutY="339.0" prefHeight="19.0" prefWidth="30.0" text="ID : ">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Label>
-      <TextField layoutX="175.0" layoutY="335.0" prefHeight="27.0" prefWidth="506.0" promptText="Enter User Name" style="-fx-background-color: white; -fx-border-width: 0px;">
-         <font>
-            <Font name="Consolas Bold" size="14.0" />
-         </font>
-      </TextField>
-      <PasswordField layoutX="175.0" layoutY="297.0" prefHeight="27.0" prefWidth="506.0" promptText="Password" style="-fx-background-color: white;">
+      <PasswordField fx:id="password" layoutX="201.0" layoutY="285.0" prefHeight="27.0" prefWidth="506.0" promptText="Password" style="-fx-background-color: white;">
          <font>
             <Font name="Consolas Bold" size="14.0" />
          </font>
       </PasswordField>
-      <JFXButton buttonType="RAISED" layoutX="176.0" layoutY="439.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
+      <JFXButton buttonType="RAISED" layoutX="201.0" layoutY="468.0" onAction="#editUser" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
          <font>
             <Font name="Corbel Bold" size="17.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="317.0" layoutY="439.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #d1394e; -fx-text-fill: white;" text="Delete">
+      <JFXButton buttonType="RAISED" layoutX="342.0" layoutY="468.0" onAction="#deleteUser" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #d1394e; -fx-text-fill: white;" text="Delete">
+         <font>
+            <Font name="Corbel Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="573.0" layoutY="81.0" onAction="#searchUser" prefHeight="34.0" prefWidth="106.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search">
          <font>
             <Font name="Corbel Bold" size="17.0" />
          </font>

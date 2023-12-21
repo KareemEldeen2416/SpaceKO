@@ -7,6 +7,7 @@ package project;
 import DBConnection.DbConnection;
 import EntityClasses.Report;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,9 +21,9 @@ import javafx.scene.control.TextField;
 public class Reports implements Initializable{
     
     @FXML
-    TextField reportTitle,author;
+    TextField reportTitle,author,missionID,searchInput,eTitle,eAuthor;
     @FXML
-    TextArea content;
+    TextArea content,eContent;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -30,8 +31,14 @@ public class Reports implements Initializable{
     }
     
     
+    
+    
+    public void searchReport() throws SQLException{
+     
+    }
+    
     public void addReport(){
-        Report report = new Report(reportTitle.getText() , author.getText(),content.getText());
+        Report report = new Report(reportTitle.getText(),author.getText(),content.getText(),Integer.parseInt(missionID.getText()));
         report.addReport();
     }
     

@@ -1,6 +1,8 @@
 package EntityClasses;
 
 import DBConnection.DbConnection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class Satellite {
     // Private attributes specific to the Satellite class
@@ -22,7 +24,7 @@ public class Satellite {
         this.Id = Id;
     }
 
-    public void setMissionName(String satName) {
+    public void setSatName(String satName) {
         this.satName = satName;
     }
 
@@ -36,7 +38,7 @@ public class Satellite {
         return Id;
     }
 
-    public String getMissionName() {
+    public String getSatName() {
         return satName;
     }
 
@@ -57,8 +59,31 @@ public class Satellite {
     }
     
     
-    public static Satellite fetch(){
-        return null;
+    public static Satellite fetch(int id) throws SQLException{
+        ResultSet rs = DbConnection.executeFetchQuery("select * from satellite where satID = "+id+";");
+        if(rs.next()){
+            return new Satellite(rs.getString("satName"),new Gpsdata(rs.getString("Destination"),rs.getFloat("x"),rs.getFloat("y")));
+        }else{
+            return null;
+        }
+    }
+    
+    public void edit(int id){
+        if(DbConnection.executeQuery("update satellite set satName = \""+this.satName+"\", Destination = \""+this.Gpsdata.getDestinationName()+"\","
+                +"x = "+this.Gpsdata.getX_axis()+", y = "+this.Gpsdata.getY_axis()+" where satID = "+id+";"
+        )){
+            System.out.println("Satellite Edited Successfully");
+        }else{
+            System.out.println("Satellite Edition Failed");
+        }
+    }
+    
+    public static void delete(int id){
+        if(DbConnection.executeQuery("delete from satellite where satID = "+id+";")){
+            System.out.println("Satellite Deleted Successfully");
+        }else{
+            System.out.println("Satellite Deletion Failed");
+        }
     }
     
     

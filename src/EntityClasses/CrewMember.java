@@ -6,16 +6,26 @@ package EntityClasses;
 
 
 import DBConnection.DbConnection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class CrewMember {
     
     private int memberID;
     private String memberName;
     private int missionID;
+    private String missionName;
     
-    public CrewMember(int missionID, String memberName){
+    public CrewMember(String memberName , int missionID){
         this.missionID = missionID;
         this.memberName = memberName;
+    }
+    
+    public CrewMember(String memberName,String missionName,int memberID,int missionID){
+        this.memberName = memberName;
+        this.missionName = missionName;
+        this.memberID = memberID;
+        this.missionID = missionID;
     }
 
     public int getMemberID() {
@@ -41,14 +51,50 @@ public class CrewMember {
     public void setMissionID(int missionID) {
         this.missionID = missionID;
     }
+
+    public String getMissionName() {
+        return missionName;
+    }
+
+    public void setMissionName(String missionName) {
+        this.missionName = missionName;
+    }
+    
     
     
     public void addCrewMember(){
-//        
-        if(DbConnection.executeQuery("insert into crewmember (memberName,missionID) values(\""+this.memberName+"\",\""+this.missionID+"\");")){
-            System.out.println("A new Crew member added");
+//        insert into crewmember (memberName,missionID) VALUES ("Luis",1);
+        if(DbConnection.executeQuery("insert into crewmember (memberName,missionID) VALUES (\""+this.memberName+"\","+this.missionID+");")){
+            System.out.println("A New Crew Member Added Successfully");
         }else{
-            System.out.println("Error");
+            System.out.println("Crew Member Addition Was Failure");
         }
     }
+    
+    public static CrewMember fetch(int id) throws SQLException{
+//        select * from crewmember inner join mission on mission.missionID = crewmember.missionID where crewmember.memeberID =1;
+        ResultSet rs = DbConnection.executeFetchQuery("select * from crewmember inner join mission on mission.missionID = crewmember.missionID where crewmember.memeberID = "+id+";");
+        if(rs.next()){
+            return new CrewMember(rs.getString("memberName"),rs.getString("missionName"),rs.getInt("memeberID"),rs.getInt("missionID"));
+        }else{
+            return null;
+        }
+    }
+    
+    public void edit(int id){
+        if(DbConnection.executeQuery("update crewmember set memberName = \""+this.memberName+"\",missionID = "+this.missionID+" where memeberID ="+id+";")){
+            System.out.println("Crew Member Edited Successfully");
+        }else{
+            System.out.println("Crew Member Edition Failed");
+        }
+    }
+    
+    public void delete(int id){
+        if(DbConnection.executeQuery("delete from crewmember where memeberID = "+id+";")){
+            System.out.println("A Crew Member Deleted Successfully");
+        }else{
+            System.out.println("Crew Member Deletion Failed");
+        }
+    }
+    
 }

@@ -1,6 +1,8 @@
 
 package EntityClasses;
 import DBConnection.DbConnection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 public class Project {
     // Private attributes specific to the Project class
     private int ProjectNumber;    // Unique identifier for the project
@@ -55,12 +57,39 @@ public class Project {
     }
     
     public void addProject(){
-         if(DbConnection.executeQuery("insert into project (Project_Name,Project_Leader,Project_Target,Project_Budget) VALUES (\""
-                 +this.ProjectName+"\",\""+this.Leader+"\",\""+this.Target+"\",\""+this.Budget+"\");")){
-            System.out.println("A new Project added");
+//        insert into project (Project_Name,Project_Budget,Project_Target) VALUES ("SAT Launch",12000.0,"DEV");
+        if(DbConnection.executeQuery("insert into project (Project_Name,Project_Budget,Project_Target) VALUES (\""
+                +this.ProjectName+"\","+this.Budget+",\""+this.Target+"\");"
+        )){
+            System.out.println("A New Report Added Successfully");
         }else{
-            System.out.println("Error");
+            System.out.println("Project Addition Was Failure");
         }
     }
     
+    
+    public static Project fetchProject(int id) throws SQLException{
+        ResultSet rs = DbConnection.executeFetchQuery("select * from project where Project_ID = "+id+";");
+        if(rs.next()){
+            return new Project(rs.getString("Project_Name"),rs.getString("Project_Target"),rs.getFloat("Project_Budget"));
+        }else{
+            return null;
+        }
+    }
+    
+    public void edit(int id){
+        if(DbConnection.executeQuery("update project set Project_Name = \""+this.ProjectName+"\",Project_Target = \""+this.Target+"\",Project_Budget = "+this.Budget+"where Project_ID = "+id+";")){
+            System.out.println("The Project Edited Successfully");
+        }else{
+            System.out.println("Edition Failure");
+        }
+    }
+    
+    public void delete(int id){
+        if(DbConnection.executeQuery("delete from project where Project_ID = "+id+";")){
+            System.out.println("Project Deleted Successfully");
+        }else{
+            System.out.println("Deletion Has Failed");
+        }
+    }
 }

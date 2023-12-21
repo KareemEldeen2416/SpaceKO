@@ -1,24 +1,26 @@
 package EntityClasses;
 
+import DBConnection.DbConnection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class Rocket {
     // Private attributes specific to the Rocket class
     private int RocketId;                    // Unique identifier for the rocket                    // Payload capacity of the rocket
     private String Model;                   // Model or type of the rocket
-    private Float Cost;                      // Cost of the rocket
+    private String RocketName;
     private boolean Availability;            // Availability status of the rocket
     private boolean VisualCommunication;     // Visual communication capability of the rocket            // Stage separation capacity of the rocket
-    private String FuelType;                 // Type of fuel used by the rocket
-    private Gpsdata Gpsdata;                 // Gpsdata object containing GPS information for the rocket
+                     // Gpsdata object containing GPS information for the rocket
 
     // Constructor for creating a Rocket object
-    public Rocket(int rocketId,  String model, Float cost, boolean availability, boolean visualCommunication, String fuelType, Gpsdata gpsdata) {
-        this.RocketId = rocketId;
+    public Rocket(String RocketName,String model,boolean availability, boolean VisualCommunication) {
+
         this.Model = model;
-        this.Cost = cost;
+        this.RocketName = RocketName;
         this.Availability = availability;
-        this.VisualCommunication = visualCommunication;
-        this.FuelType = fuelType;
-        this.Gpsdata = gpsdata;
+        this.VisualCommunication = VisualCommunication;
+       
     }
 
     // Setter methods for updating the values of attributes
@@ -32,9 +34,7 @@ public class Rocket {
         this.Model = Model;
     }
 
-    public void setCost(Float Cost) {
-        this.Cost = Cost;
-    }
+    
 
     public void setAvailability(boolean Availability) {
         this.Availability = Availability;
@@ -45,13 +45,6 @@ public class Rocket {
     }
 
     
-    public void setFuelType(String FuelType) {
-        this.FuelType = FuelType;
-    }
-
-    public void setGpsdata(Gpsdata Gpsdata) {
-        this.Gpsdata = Gpsdata;
-    }
 
     // Getter methods for retrieving the values of attributes
     public int getRocketId() {
@@ -64,9 +57,7 @@ public class Rocket {
         return Model;
     }
 
-    public Float getCost() {
-        return Cost;
-    }
+    
 
     public boolean isAvailability() {
         return Availability;
@@ -76,12 +67,52 @@ public class Rocket {
         return VisualCommunication;
     }
 
-    
-    public String getFuelType() {
-        return FuelType;
+    public String getRocketName() {
+        return RocketName;
     }
 
-    public Gpsdata getGpsdata() {
-        return Gpsdata;
+    public void setRocketName(String RocketName) {
+        this.RocketName = RocketName;
+    }
+    
+    
+
+    
+    public void add(){
+//        insert into rocket (rocketName,rocketModel,rocketAv,rocketVC) VALUES ("R17","c88",true,true);
+        if(DbConnection.executeQuery("insert into rocket (rocketName,rocketModel,rocketAv,rocketVC) VALUES (\""
+                +this.RocketName+"\",\""+this.Model+"\","+this.Availability+","+this.VisualCommunication+");"
+        )){
+            System.out.println("A New Rocket Added Successfully");
+        }else{
+            System.out.println("Rocket Addition Failed");
+        }
+    }
+    
+    public static Rocket fetch(int id) throws SQLException{
+        ResultSet rs = DbConnection.executeFetchQuery("select * from rocket where Rocket_ID = "+id+";");
+        if(rs.next()){
+            return new Rocket(rs.getString("rocketName"),rs.getString("rocketModel"), rs.getBoolean("rocketAv"),rs.getBoolean("rocketVC"));
+        }else{
+            return null;
+        }
+    }
+    
+    public void edit(int id){
+        if(DbConnection.executeQuery("update rocket set rocketName = \""+this.RocketName+"\",rocketModel = \""+this.Model+"\","
+                +"rocketAv = "+this.Availability+", rocketVC = "+this.VisualCommunication+" where Rocket_ID = "+id+";"
+        )){
+            System.out.println("Rocket Edited Successfully");
+        }else{
+            System.out.println("Rocket Edition Failed");
+        }
+    }
+    
+    public static void delete(int id){
+        if(DbConnection.executeQuery("delete from rocket where Rocket_ID = "+id+";")){
+            System.out.println("Rocket Deleted Successfully");
+        }else{
+            System.out.println("Rocket Deletion Failed");
+        }
     }
 }

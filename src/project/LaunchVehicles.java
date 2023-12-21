@@ -5,7 +5,9 @@
 package project;
 
 import EntityClasses.Gpsdata;
+import EntityClasses.Rocket;
 import EntityClasses.Satellite;
+import com.jfoenix.controls.JFXToggleButton;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -13,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 /**
  *
@@ -23,7 +26,15 @@ public class LaunchVehicles implements Initializable{
     @FXML
     TextField satName,dest,x,y,browseSat,esn,esd,esx,esy,searchSat;
     @FXML
+    TextField rName,rModel,browseRocket,searchRocket,erName,erModel;
+    @FXML
+    JFXToggleButton rAV,rVC,erAv,erVc;
+    @FXML
     Label sNameLabel,sxLabel,syLabel,sIDLabel,sDestLabel;
+    @FXML
+    Label rnLabel,rmLabel,ravLabel,rvcLabel,ridLabel;
+    @FXML
+    AnchorPane pane;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -61,4 +72,46 @@ public class LaunchVehicles implements Initializable{
     public void deleteSatellite(){
         Satellite.delete(Integer.parseInt(searchSat.getText()));
     }
+    
+    
+    public void addRocket(){
+        Rocket r = new Rocket(rName.getText(),rModel.getText(),rAV.isSelected(),rVC.isSelected());
+        r.add();
+    }
+    
+    public void browseRocket() throws SQLException{
+        Rocket r = Rocket.fetch(Integer.parseInt(browseRocket.getText()));
+        rnLabel.setText(r.getRocketName());
+        rmLabel.setText(r.getModel());
+        ridLabel.setText(browseRocket.getText());
+        ravLabel.setText(String.valueOf(r.isAvailability()));
+        rvcLabel.setText(String.valueOf(r.isVisualCommunication()));
+    }
+    
+    public void searchRocket() throws SQLException{
+        Rocket r = Rocket.fetch(Integer.parseInt(searchRocket.getText()));
+        erName.setText(r.getRocketName());
+        erModel.setText(r.getModel());
+        erAv.setSelected(r.isAvailability());
+        erVc.setSelected(r.isVisualCommunication());
+    }
+    
+    public void editRocket(){
+        Rocket r = new Rocket(erName.getText(),erModel.getText(),erAv.isSelected(), erVc.isSelected());
+        r.edit(Integer.parseInt(searchRocket.getText()));
+    }
+    
+    public void deleteRocket(){
+        Rocket.delete(Integer.parseInt(searchRocket.getText()));
+        for(Object o : pane.getChildren()){
+            if(o instanceof TextField){
+                ((TextField)o).clear();
+            }
+            if(o instanceof JFXToggleButton){
+                ((JFXToggleButton)o).setSelected(false);
+            }
+        }
+    }
+    
+    
 }

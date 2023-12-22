@@ -16,7 +16,7 @@
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
-            <Font name="Corbel Bold" size="33.0" />
+            <Font name="Outfit Bold" size="34.0" />
          </font>
          <textFill>
             <LinearGradient endX="0.9545454256462328" endY="0.8106060462128936" startX="0.49621211308421515" startY="0.6742423953432025">
@@ -43,7 +43,7 @@
                      <children>
                         <Label layoutX="14.0" layoutY="78.0" text="Project Name :">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="pname" layoutX="202.0" layoutY="74.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -53,7 +53,7 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="104.0" text="Project No. : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="pno" layoutX="202.0" layoutY="100.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -63,7 +63,7 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="130.0" text="Target : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="ptarget" layoutX="202.0" layoutY="126.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -73,7 +73,7 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="156.0" text="Budget :  ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="pbudget" layoutX="202.0" layoutY="152.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -88,7 +88,7 @@
                         </TextField>
                         <JFXButton buttonType="RAISED" layoutX="567.0" layoutY="27.0" onAction="#browseProject" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="14.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -97,7 +97,7 @@
           </Tab>
           <Tab text="Add project">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane fx:id="addPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="pName" layoutX="136.0" layoutY="46.0" prefHeight="27.0" prefWidth="525.0" promptText="Enter Project Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
@@ -106,12 +106,12 @@
                         </TextField>
                         <Label layoutX="27.0" layoutY="50.0" text="Project Name : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <JFXButton buttonType="RAISED" layoutX="136.0" layoutY="324.0" onAction="#addProject" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #0097ff;" text="Add" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                         <TextField fx:id="budget" layoutX="135.0" layoutY="84.0" prefHeight="27.0" prefWidth="525.0" promptText="Enter The Budget Of The Project" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -121,12 +121,12 @@
                         </TextField>
                         <Label layoutX="26.0" layoutY="88.0" text="Budget : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <Label layoutX="26.0" layoutY="127.0" text="Target : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextArea fx:id="target" layoutX="135.0" layoutY="127.0" prefHeight="130.0" prefWidth="526.0" promptText="Enter Target Of The Project Here" style="-fx-background-color: whtie;" wrapText="true">
@@ -142,34 +142,34 @@
               <content>
                 <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="epName" layoutX="147.0" layoutY="69.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;" text="Project Name">
+                        <TextField fx:id="epName" layoutX="147.0" layoutY="69.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
                         <Label layoutX="19.0" layoutY="73.0" text="Project Name : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="323.0" onAction="#editProject" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #109436;" text="Edit" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
-                        <TextField fx:id="epBudget" layoutX="147.0" layoutY="109.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;" text="Budget Of The Project">
+                        <TextField fx:id="epBudget" layoutX="147.0" layoutY="109.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Full Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
                         <Label layoutX="19.0" layoutY="113.0" text="Budget : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <Label layoutX="21.0" layoutY="159.0" text="Target : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextArea fx:id="epTarget" layoutX="147.0" layoutY="159.0" prefHeight="131.0" prefWidth="526.0" promptText="Enter Target Of The Project Here" style="-fx-background-color: whtie;" wrapText="true">
@@ -179,7 +179,7 @@
                         </TextArea>
                         <JFXButton buttonType="RAISED" layoutX="296.0" layoutY="323.0" onAction="#deleteProject" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #d1394e; -fx-text-fill: white;" text="Delete">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                         <TextField fx:id="searchEProject" layoutX="147.0" layoutY="27.0" prefHeight="27.0" prefWidth="413.0" promptText="Search By ID" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -189,7 +189,7 @@
                         </TextField>
                         <JFXButton buttonType="RAISED" layoutX="569.0" layoutY="27.0" onAction="#searchProject" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="14.0" />
+                              <Font name="Outfit Bold" size="13.0" />
                            </font>
                         </JFXButton>
                      </children>

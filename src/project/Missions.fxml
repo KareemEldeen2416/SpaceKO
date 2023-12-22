@@ -16,7 +16,7 @@
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
-            <Font name="Corbel Bold" size="33.0" />
+            <Font name="Outfit Bold" size="33.0" />
          </font>
          <textFill>
             <LinearGradient endX="0.9545454256462328" endY="0.8106060462128936" startX="0.49621211308421515" startY="0.6742423953432025">
@@ -43,7 +43,7 @@
                      <children>
                         <Label layoutX="14.0" layoutY="97.0" text="Mission Name : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="mNameLabel" layoutX="203.0" layoutY="93.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -53,12 +53,12 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="127.0" text="Mission No. : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label layoutX="14.0" layoutY="157.0" text="Leader : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="mIDLabel" layoutX="203.0" layoutY="123.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -73,7 +73,7 @@
                         </Label>
                         <Label layoutX="13.0" layoutY="187.0" text="Progress : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="mProgressLabel" layoutX="202.0" layoutY="183.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -83,17 +83,17 @@
                         </Label>
                         <Label layoutX="13.0" layoutY="217.0" text="Budget : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
-                        <Label fx:id="mBudgetLabel" layoutX="202.0" layoutY="213.0" prefHeight="30.0" prefWidth="471.0" text="----">
+                        <Label fx:id="mBudgetLabel" layoutX="202.0" layoutY="212.0" prefHeight="30.0" prefWidth="471.0" text="----">
                            <font>
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
                         <Label layoutX="13.0" layoutY="251.0" text="Report : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <TextArea fx:id="mReport" editable="false" layoutX="203.0" layoutY="252.0" prefHeight="176.0" prefWidth="529.0" style="-fx-background-color: white;" text="&#10;" wrapText="true" AnchorPane.bottomAnchor="28.80000000000001" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="252.0">
@@ -106,9 +106,9 @@
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
-                        <JFXButton buttonType="RAISED" layoutX="583.0" layoutY="44.0" onAction="#browseMission" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
+                        <JFXButton buttonType="RAISED" layoutX="582.0" layoutY="43.0" onAction="#browseMission" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="14.0" />
+                              <Font name="Outfit Bold" size="15.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -117,7 +117,7 @@
           </Tab>
           <Tab text="Add Mission">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane fx:id="addPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="missionName" layoutX="172.0" layoutY="36.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Mission Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
@@ -126,7 +126,7 @@
                         </TextField>
                         <Label layoutX="25.0" layoutY="40.0" text="Mission Name : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextField fx:id="missionLeader" layoutX="172.0" layoutY="69.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Mission Leader ID" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -136,7 +136,7 @@
                         </TextField>
                         <Label layoutX="25.0" layoutY="73.0" text="Mission Leader ID: ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextField fx:id="missionBudget" layoutX="172.0" layoutY="102.0" prefHeight="27.0" prefWidth="521.0" promptText="Enter Budget" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -146,12 +146,12 @@
                         </TextField>
                         <Label layoutX="25.0" layoutY="106.0" text="Budget : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <JFXButton buttonType="RAISED" layoutX="172.0" layoutY="355.0" onAction="#addMission" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #0097ff;" text="Add" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -169,7 +169,7 @@
                         </TextField>
                         <Label layoutX="25.0" layoutY="97.0" text="Mission Name : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextField fx:id="eLeader" layoutX="173.0" layoutY="131.0" prefHeight="27.0" prefWidth="521.0" promptText="Mission Leader" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -179,7 +179,7 @@
                         </TextField>
                         <Label layoutX="25.0" layoutY="135.0" text="Mission Leader : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextField fx:id="eProgress" layoutX="173.0" layoutY="168.0" prefHeight="27.0" prefWidth="521.0" promptText="Mission Progress" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -189,7 +189,7 @@
                         </TextField>
                         <Label layoutX="25.0" layoutY="172.0" text="Progress : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextField fx:id="eBudget" layoutX="173.0" layoutY="204.0" prefHeight="27.0" prefWidth="521.0" promptText="Mission Budget" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -199,17 +199,17 @@
                         </TextField>
                         <Label layoutX="25.0" layoutY="208.0" text="Budget : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="375.0" onAction="#editMission" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                         <JFXButton buttonType="RAISED" layoutX="322.0" layoutY="375.0" onAction="#deleteMission" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-background-color: #d1394e; -fx-text-fill: white;" text="Delete">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                         <TextField fx:id="searchMission" layoutX="173.0" layoutY="32.0" prefHeight="27.0" prefWidth="413.0" promptText="Search By ID" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -217,9 +217,9 @@
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
-                        <JFXButton buttonType="RAISED" layoutX="595.0" layoutY="32.0" onAction="#SearchMission" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
+                        <JFXButton buttonType="RAISED" layoutX="595.0" layoutY="31.0" onAction="#SearchMission" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="14.0" />
+                              <Font name="Outfit Bold" size="15.0" />
                            </font>
                         </JFXButton>
                      </children>

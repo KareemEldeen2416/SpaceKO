@@ -9,7 +9,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.main">
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.main">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
@@ -32,7 +32,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <JFXButton buttonType="RAISED" layoutX="52.0" layoutY="85.0" onAction="#showAddUser" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Add system user">
+      <JFXButton buttonType="RAISED" layoutX="86.0" layoutY="155.0" onAction="#showAddUser" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Add system user">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -53,7 +53,7 @@
             <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="258.0" layoutY="85.0" onAction="#showEditUser" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Edit system user">
+      <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="155.0" onAction="#showEditUser" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Edit system user">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -74,7 +74,7 @@
             <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="85.0" onAction="#showMissionsPersonnel" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missoins Personnel">
+      <JFXButton buttonType="RAISED" layoutX="497.0" layoutY="155.0" onAction="#showMissionsPersonnel" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missoins Personnel">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -95,7 +95,7 @@
             <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="167.0" onAction="#showInterships" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Interships">
+      <JFXButton buttonType="RAISED" layoutX="86.0" layoutY="237.0" onAction="#showResearchs" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Researchs">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -116,7 +116,7 @@
             <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="167.0" onAction="#showResearchs" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Researchs">
+      <JFXButton buttonType="RAISED" layoutX="290.0" layoutY="237.0" onAction="#showReports" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Reports">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -137,7 +137,7 @@
             <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="167.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Reports">
+      <JFXButton buttonType="RAISED" layoutX="86.0" layoutY="321.0" onAction="#showMissions" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missions">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -158,7 +158,7 @@
             <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="254.0" onAction="#showMissions" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Missions">
+      <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="321.0" onAction="#showLaunchVehicles" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Launch Vehicles">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>
@@ -179,28 +179,7 @@
             <Font name="Outfit Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Launch Vehicles">
-         <ripplerFill>
-            <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.3248528242111206" green="0.47999998927116394" blue="0.04800000041723251" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="1.0" green="0.051851850003004074" blue="0.051851850003004074" />
-                     </color>
-                  </Stop>
-               </stops>
-            </RadialGradient>
-         </ripplerFill>
-         <font>
-            <Font name="Outfit Bold" size="16.0" />
-         </font>
-      </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="254.0" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Projects">
+      <JFXButton buttonType="RAISED" layoutX="497.0" layoutY="237.0" onAction="#showProjects" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: white;" text="Projects">
          <ripplerFill>
             <RadialGradient centerX="0.49115045091747184" centerY="0.5303030375278357" focusAngle="-123.69" focusDistance="0.018348606354599672" radius="1.0">
                <stops>

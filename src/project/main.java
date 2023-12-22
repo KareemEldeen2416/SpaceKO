@@ -7,8 +7,10 @@ package project;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -32,7 +34,7 @@ public class main implements Initializable{
     }
     
     
-    public void showAddUser() throws IOException{
+    public void showAddUser(ActionEvent e) throws IOException{
         createStage("SystemUser.fxml","Add System User");
     }
     
@@ -44,8 +46,8 @@ public class main implements Initializable{
         createStage("MissionsPersonnel.fxml","Missions Personnel");
     }
     
-    public void showInterships() throws IOException{
-        createStage("Interships.fxml","Interships");
+    public void showReports() throws IOException{
+        createStage("Reports.fxml","Reports");
     }
     
     public void showResearchs() throws IOException{
@@ -55,4 +57,16 @@ public class main implements Initializable{
     public void showMissions() throws IOException{
         createStage("Missions.fxml","Missions");
     }
+    
+    public void showProjects() throws IOException{
+        createStage("Projects.fxml","Projects");
+    }
+    
+    public void showLaunchVehicles() throws IOException{
+        createStage("LaunchVehicles.fxml","Launch Vehicles");
+    }
+    
+    
+    
+    
 }

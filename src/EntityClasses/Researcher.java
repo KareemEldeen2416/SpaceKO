@@ -1,46 +1,73 @@
 package EntityClasses;
 
 // Class representing a researcher, extending from the Personnel class
-public class Researcher extends Personnel {
+
+import DBConnection.DbConnection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class Researcher  {
     // Private member variables to store researcher-specific information
-    private String Topic;     // Research topic
-    private String Speciality;     // Researcher's speciality
-    private boolean Available;     // Variable to determine if the researcher is currently available
-
+    private String name;
+    private int researcherID;
+    
     // Constructor to initialize researcher information, taking information about the researcher and passing it to the superclass constructor (Personnel)
-    public Researcher(String name,String jobTitle,String userName,String password,String topic,String speciality,boolean avilable){
-        super(name,jobTitle,userName,password);
-        this.Topic=topic;
-        this.Speciality=speciality;
-        this.Available=avilable;
-
+    public Researcher(String name ){
+        this.name =name;
+        
     }
 
     // Setter methods to update researcher information
-    public void setTopic(String Topic) {
-        this.Topic = Topic;
+
+    public String getName() {
+        return name;
     }
 
-    public void setSpeciality(String Speciality) {
-        this.Speciality = Speciality;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setAvailable(boolean Available) {
-        this.Available = Available;
+    public int getResearcherID() {
+        return researcherID;
     }
 
-    // Getter methods to retrieve researcher information
-
-    public String getTopic() {
-        return Topic;
+    public void setResearcherID(int researcherID) {
+        this.researcherID = researcherID;
     }
-
-    public String getSpeciality() {
-        return Speciality;
+    
+    public void add(){
+//        insert into researcher (researcherName) VALUES ("Osama");
+        if(DbConnection.executeQuery("insert into researcher (researcherName) values (\""+this.name+"\");")){
+            System.out.println("A New Researcher Added Successfully");
+        }else{
+            System.out.println("Researcher Addition Failed");
+        }
     }
-
-    // Method to check if the researcher is currently available
-    public boolean isAvailable() {
-        return Available;
+    
+    public static Researcher fetch(int id) throws SQLException{
+        ResultSet rs = DbConnection.executeFetchQuery("select * from researcher where researcherID = "+id+";");
+        if(rs.next()){
+            return new Researcher(rs.getString("researcherName"));
+        }else{
+            return null;
+        }
+    }
+    
+    public void edit(int id){
+        if(DbConnection.executeQuery("update researcher set researcherName = \""+this.name+"\" where researcherID = "+id+";")){
+            System.out.println("Researcher Edited Successfully");
+        }else{
+            System.out.println("Researcher Edition Failed");
+        }
+    }
+    
+    public static void delete(int id){
+        if(DbConnection.executeQuery("update research set researcherID = 0 where researcherID = "+id+";")){
+            if(DbConnection.executeQuery("delete from researcher where researcherID = "+id+";")){
+                System.out.println("Researcher Deleted Successfully");
+            }
+        }else{
+            System.out.println("Researcher Deletion Failed");
+        }
     }
 }

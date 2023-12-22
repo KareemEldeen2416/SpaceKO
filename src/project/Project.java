@@ -27,7 +27,7 @@ public class Project extends Application{
     @Override
     public void start(Stage stage)  {
         try{
-        Parent root = FXMLLoader.load(getClass().getResource("LaunchVehicles.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Research.fxml"));
         Scene scene = new Scene(root);
         stage.setTitle("Login");
         stage.setResizable(false);

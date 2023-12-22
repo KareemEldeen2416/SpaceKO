@@ -11,8 +11,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="790.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="project.Research">
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Research">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
@@ -41,46 +40,56 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="32.0" layoutY="44.0" text="Research Name  : ">
+                        <Label layoutX="30.0" layoutY="95.0" text="Research Name  : ">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="232.0" layoutY="40.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                        <Label fx:id="resName" layoutX="230.0" layoutY="91.0" prefHeight="30.0" prefWidth="471.0" text="----">
                            <font>
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="32.0" layoutY="70.0" text="Research No. : ">
+                        <Label layoutX="30.0" layoutY="121.0" text="Research No. : ">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="232.0" layoutY="66.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                        <Label fx:id="resID" layoutX="230.0" layoutY="118.0" prefHeight="30.0" prefWidth="471.0" text="----">
                            <font>
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="32.0" layoutY="96.0" text="Researcher : ">
+                        <Label layoutX="30.0" layoutY="147.0" text="Researcher : ">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="232.0" layoutY="92.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                        <Label fx:id="resRe" layoutX="230.0" layoutY="143.0" prefHeight="30.0" prefWidth="471.0" text="----">
                            <font>
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="32.0" layoutY="122.0" text="Researcher ID  :">
+                        <Label layoutX="30.0" layoutY="173.0" text="Researcher ID  :">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="232.0" layoutY="118.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                        <Label fx:id="resReID" layoutX="230.0" layoutY="169.0" prefHeight="30.0" prefWidth="471.0" text="----">
                            <font>
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
+                        <TextField fx:id="browseResearch" layoutX="30.0" layoutY="48.0" prefHeight="27.0" prefWidth="540.0" promptText="Search By ID" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton buttonType="RAISED" layoutX="601.0" layoutY="48.0" onAction="#browseResearch" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="Corbel Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
                      </children>
                   </AnchorPane>
             </content>
@@ -89,7 +98,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="209.0" layoutY="50.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Research Name " style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="researchName" layoutX="209.0" layoutY="50.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Research Name " style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
@@ -99,87 +108,67 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="209.0" layoutY="119.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Researcher Name " style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="37.0" layoutY="123.0" text="Researcher Name : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <TextField layoutX="209.0" layoutY="155.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Research ID" style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="37.0" layoutY="159.0" text="Researcher ID : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <TextField layoutX="209.0" layoutY="84.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Research Topic" style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="37.0" layoutY="88.0" text="Research Topic : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <JFXButton buttonType="RAISED" layoutX="209.0" layoutY="338.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
+                        <JFXButton buttonType="RAISED" layoutX="209.0" layoutY="360.0" onAction="#addResearch" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
                            </font>
                         </JFXButton>
+                        <TextField fx:id="reID" layoutX="209.0" layoutY="86.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Researcher ID" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="37.0" layoutY="90.0" text="Researcher ID : ">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
             <Tab text="Edit Research">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane fx:id="sePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="213.0" layoutY="34.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Research Name " style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="eres" layoutX="208.0" layoutY="84.0" prefHeight="27.0" prefWidth="528.0" promptText="Enter Research Name " style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
-                        <Label layoutX="32.0" layoutY="38.0" text="Research Name : ">
+                        <Label layoutX="27.0" layoutY="88.0" text="Research Name : ">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="213.0" layoutY="70.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Research Name " style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="eresReID" layoutX="208.0" layoutY="121.0" prefHeight="27.0" prefWidth="529.0" promptText="Enter Research Name " style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
-                        <Label layoutX="32.0" layoutY="74.0" text="Researcher Name : ">
+                        <Label layoutX="27.0" layoutY="125.0" text="Researcher ID :">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="213.0" layoutY="106.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Research Name " style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="32.0" layoutY="110.0" text="Researcher ID :">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <JFXButton buttonType="RAISED" layoutX="213.0" layoutY="338.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
+                        <JFXButton buttonType="RAISED" layoutX="208.0" layoutY="362.0" onAction="#editResearch" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton buttonType="RAISED" layoutX="357.0" layoutY="338.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #d1394e;" text="Delete">
+                        <JFXButton buttonType="RAISED" layoutX="358.0" layoutY="362.0" onAction="#deleteResearch" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #d1394e;" text="Delete">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <TextField fx:id="sre" layoutX="208.0" layoutY="44.0" prefHeight="27.0" prefWidth="413.0" promptText="Search By ID" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton buttonType="RAISED" layoutX="636.0" layoutY="44.0" onAction="#searchResearch" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="Corbel Bold" size="14.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -190,46 +179,36 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="56.0" layoutY="63.0" text="Researcher Name : ">
+                        <Label layoutX="39.0" layoutY="86.0" text="Researcher Name : ">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="250.0" layoutY="59.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                        <Label fx:id="researcherName" layoutX="233.0" layoutY="82.0" prefHeight="30.0" prefWidth="471.0" text="----">
                            <font>
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="56.0" layoutY="103.0" text="Researcher ID : ">
+                        <Label layoutX="39.0" layoutY="126.0" text="Researcher ID : ">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="250.0" layoutY="99.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                        <Label fx:id="researcherID" layoutX="233.0" layoutY="122.0" prefHeight="30.0" prefWidth="471.0" text="----">
                            <font>
                               <Font name="Consolas Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="56.0" layoutY="141.0" text="Speciallity : ">
+                        <TextField fx:id="browseResearcher" layoutX="39.0" layoutY="40.0" prefHeight="27.0" prefWidth="540.0" promptText="Search By ID" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Consolas Bold" size="14.0" />
                            </font>
-                        </Label>
-                        <Label layoutX="250.0" layoutY="137.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
+                        </TextField>
+                        <JFXButton buttonType="RAISED" layoutX="594.0" layoutY="40.0" onAction="#browseResearcher" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Consolas Bold" size="15.0" />
+                              <Font name="Corbel Bold" size="14.0" />
                            </font>
-                        </Label>
-                        <Label layoutX="56.0" layoutY="179.0" text="Number Of Researchs : ">
-                           <font>
-                              <Font name="Corbel Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="250.0" layoutY="175.0" prefHeight="30.0" prefWidth="471.0" text="Satellite management">
-                           <font>
-                              <Font name="Consolas Bold" size="15.0" />
-                           </font>
-                        </Label>
+                        </JFXButton>
                      </children>
                   </AnchorPane>
               </content>
@@ -238,7 +217,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="202.0" layoutY="51.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Researcher Name " style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="reName" layoutX="202.0" layoutY="51.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Researcher Name " style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
@@ -248,17 +227,7 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="202.0" layoutY="87.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Researcher Name " style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="38.0" layoutY="91.0" text="Speciallity : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <JFXButton buttonType="RAISED" layoutX="202.0" layoutY="338.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
+                        <JFXButton buttonType="RAISED" layoutX="202.0" layoutY="363.0" onAction="#addResearcher" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
                            </font>
@@ -269,36 +238,36 @@
             </Tab>
             <Tab text="Edit Researcher">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane fx:id="rePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="196.0" layoutY="38.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Researcher Name " style="-fx-background-color: white; -fx-border-width: 0px;">
+                        <TextField fx:id="ereName" layoutX="196.0" layoutY="78.0" prefHeight="27.0" prefWidth="531.0" promptText="Enter Researcher Name " style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
                               <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </TextField>
-                        <Label layoutX="43.0" layoutY="42.0" text="Researcher Name : ">
+                        <Label layoutX="43.0" layoutY="82.0" text="Researcher Name : ">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="196.0" layoutY="77.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Researcher Name " style="-fx-background-color: white; -fx-border-width: 0px;">
-                           <font>
-                              <Font name="Consolas Bold" size="14.0" />
-                           </font>
-                        </TextField>
-                        <Label layoutX="43.0" layoutY="81.0" text="Speciallity : ">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <JFXButton buttonType="RAISED" layoutX="196.0" layoutY="332.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
+                        <JFXButton buttonType="RAISED" layoutX="196.0" layoutY="364.0" onAction="#editResearcher" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton buttonType="RAISED" layoutX="345.0" layoutY="332.0" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #d1394e;" text="Delete">
+                        <JFXButton buttonType="RAISED" layoutX="345.0" layoutY="364.0" onAction="#deleteResearcher" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #d1394e;" text="Delete">
                            <font>
                               <Font name="Corbel Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <TextField fx:id="sr" layoutX="196.0" layoutY="35.0" prefHeight="27.0" prefWidth="413.0" promptText="Search By ID" style="-fx-background-color: white; -fx-border-width: 0px;">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton buttonType="RAISED" layoutX="624.0" layoutY="35.0" onAction="#searchResearcher" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="Corbel Bold" size="14.0" />
                            </font>
                         </JFXButton>
                      </children>

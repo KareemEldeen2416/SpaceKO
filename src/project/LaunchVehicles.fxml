@@ -107,7 +107,7 @@
           </Tab>
           <Tab text="Add Satellite">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane fx:id="addSatPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="satName" layoutX="196.0" layoutY="33.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Satellite Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
@@ -160,7 +160,7 @@
           </Tab>
             <Tab text="Edit Satellite">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane fx:id="satPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="esn" layoutX="201.0" layoutY="74.0" prefHeight="27.0" prefWidth="526.0" promptText="Track Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
@@ -296,7 +296,7 @@
             </Tab>
             <Tab text="Add Rocket">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane fx:id="addRocketPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="rName" layoutX="194.0" layoutY="34.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Rocket Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>

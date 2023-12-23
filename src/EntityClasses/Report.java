@@ -21,6 +21,15 @@ public class Report {
         this.missionID = missionID;
 
     }
+    
+    public Report(String Title,String Author,String Content){
+  
+        this.Title=Title;
+        this.Author=Author;
+        this.Content=Content;
+
+        
+    }
 
     public int getMissionID() {
         return missionID;
@@ -30,12 +39,7 @@ public class Report {
         this.missionID = missionID;
     }
     
-    
-    
-    public Report(){
-    
-    }
-
+  
     // Setter methods for updating the values of attributes
     public void setReportNumber(int ReportNumber) {
         this.ReportNumber = ReportNumber;
@@ -81,6 +85,31 @@ public class Report {
         }
     }
     
+    
+    public static Report fetch(int id) throws SQLException{
+        ResultSet rs = DbConnection.executeFetchQuery("select * from report where reportID ="+id+";");
+        if(rs.next()){
+            return new Report(rs.getString("reportTitle"), rs.getString("reportAuthor"), rs.getString("reportContent"));
+        }else{
+            return null;
+        }
+    }
+    
+    public void edit(int id){
+        if(DbConnection.executeQuery("update report set reportTitle = \""+this.Title+"\",reportAuthor=\""+this.Author+"\",reportContent =\""+this.Content+"\" where reportID = "+id+";")){
+            System.out.println("Report Edited Successfully");
+        }else{
+            System.out.println("Report Edition Failed");
+        }
+    } 
+    
+    public static void delete(int id){
+        if(DbConnection.executeQuery("delete from report where reportID = "+id+";")){
+            System.out.println("Report Deleted Successfully");
+        }else{
+            System.out.println("Report Deletion Failed");
+        }
+    }
     
     
 }

@@ -15,7 +15,7 @@
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="SpaceKO">
          <font>
-            <Font name="Corbel Bold" size="33.0" />
+            <Font name="Outfit Bold" size="34.0" />
          </font>
          <textFill>
             <LinearGradient endX="0.9545454256462328" endY="0.8106060462128936" startX="0.49621211308421515" startY="0.6742423953432025">
@@ -42,7 +42,7 @@
                      <children>
                         <Label layoutX="14.0" layoutY="81.0" text="Astronaut Name : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="nameLabel" layoutX="192.0" layoutY="77.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -52,7 +52,7 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="107.0" text="Astronaut ID : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="astroID" layoutX="192.0" layoutY="103.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -62,7 +62,7 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="133.0" text="Mission Name : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="missionName" layoutX="192.0" layoutY="129.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -72,7 +72,7 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="159.0" text="Mission No. : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="missionID" layoutX="192.0" layoutY="155.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -87,7 +87,7 @@
                         </TextField>
                         <JFXButton buttonType="RAISED" layoutX="574.0" layoutY="26.0" onAction="#browseAstronaut" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="14.0" />
+                              <Font name="Outfit Bold" size="13.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -96,7 +96,7 @@
           </Tab>
           <Tab text="Add Astronaut">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane fx:id="addAstroPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="astroName" layoutX="202.0" layoutY="30.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Astronaut Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
@@ -105,12 +105,12 @@
                         </TextField>
                         <Label layoutX="42.0" layoutY="34.0" text="Astronaut Name : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
-                        <JFXButton buttonType="RAISED" layoutX="202.0" layoutY="306.0" onAction="#addAstronaut" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
+                        <JFXButton buttonType="RAISED" layoutX="202.0" layoutY="339.0" onAction="#addAstronaut" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -119,7 +119,7 @@
           </Tab>
             <Tab text="Edit Atronaut">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane fx:id="astroPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="eAstroName" layoutX="189.0" layoutY="69.0" prefHeight="27.0" prefWidth="478.0" promptText="Astronaut Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
@@ -128,17 +128,17 @@
                         </TextField>
                         <Label layoutX="28.0" layoutY="73.0" text="Astronaut Name : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
-                        <JFXButton buttonType="RAISED" layoutX="190.0" layoutY="300.0" onAction="#editAstronaut" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
+                        <JFXButton buttonType="RAISED" layoutX="189.0" layoutY="341.0" onAction="#editAstronaut" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton buttonType="RAISED" layoutX="336.0" layoutY="300.0" onAction="#deleteAstronaut" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #d1394e;" text="Delete">
+                        <JFXButton buttonType="RAISED" layoutX="335.0" layoutY="341.0" onAction="#deleteAstronaut" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #d1394e;" text="Delete">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                         <TextField fx:id="searchEAstro" layoutX="188.0" layoutY="27.0" prefHeight="27.0" prefWidth="366.0" promptText="Search By ID" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -148,7 +148,7 @@
                         </TextField>
                         <JFXButton buttonType="RAISED" layoutX="567.0" layoutY="27.0" onAction="#searchAstronaut" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="14.0" />
+                              <Font name="Outfit Bold" size="13.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -161,7 +161,7 @@
                      <children>
                         <Label layoutX="14.0" layoutY="100.0" text="Member Name : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="memberName" layoutX="205.0" layoutY="96.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -171,7 +171,7 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="130.0" text="Mission Name : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="memberMissionName" layoutX="205.0" layoutY="126.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -181,7 +181,7 @@
                         </Label>
                         <Label layoutX="14.0" layoutY="160.0" text="Mission No. : ">
                            <font>
-                              <Font name="Corbel Bold" size="18.0" />
+                              <Font name="Outfit Bold" size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="memberMissionID" layoutX="205.0" layoutY="156.0" prefHeight="30.0" prefWidth="471.0" text="----">
@@ -196,7 +196,7 @@
                         </TextField>
                         <JFXButton buttonType="RAISED" layoutX="590.0" layoutY="27.0" onAction="#browseCrewMember" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="14.0" />
+                              <Font name="Outfit Bold" size="13.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -205,7 +205,7 @@
             </Tab>
             <Tab text="Add Crew Member">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane fx:id="addMemberPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="crewMemberName" layoutX="192.0" layoutY="23.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Member Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
@@ -214,7 +214,7 @@
                         </TextField>
                         <Label layoutX="37.0" layoutY="27.0" text="Member Name : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextField fx:id="crewMissionID" layoutX="192.0" layoutY="57.0" prefHeight="27.0" prefWidth="478.0" promptText="Enter Mission No." style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -224,12 +224,12 @@
                         </TextField>
                         <Label layoutX="37.0" layoutY="61.0" text="Mission No. : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <JFXButton buttonType="RAISED" layoutX="192.0" layoutY="334.0" onAction="#addCrewMember" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #0097ff;" text="Add">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                      </children>
@@ -238,7 +238,7 @@
             </Tab>
             <Tab text="Edit Crew Member">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane fx:id="memberPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="ememberName" layoutX="188.0" layoutY="83.0" prefHeight="27.0" prefWidth="478.0" promptText="Member Name" style="-fx-background-color: white; -fx-border-width: 0px;">
                            <font>
@@ -247,7 +247,7 @@
                         </TextField>
                         <Label layoutX="23.0" layoutY="87.0" text="Member Name : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <TextField fx:id="emissionID" layoutX="188.0" layoutY="119.0" prefHeight="27.0" prefWidth="478.0" promptText="Mission No." style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -257,17 +257,17 @@
                         </TextField>
                         <Label layoutX="23.0" layoutY="123.0" text="Mission No. : ">
                            <font>
-                              <Font name="System Bold" size="13.0" />
+                              <Font name="Outfit Bold" size="14.0" />
                            </font>
                         </Label>
                         <JFXButton buttonType="RAISED" layoutX="188.0" layoutY="337.0" onAction="#editCrewMember" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #109436;" text="Edit">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                         <JFXButton buttonType="RAISED" layoutX="331.0" layoutY="337.0" onAction="#deleteCrewMember" prefHeight="48.0" prefWidth="131.0" ripplerFill="WHITE" style="-fx-text-fill: white; -fx-background-color: #d1394e;" text="Delete">
                            <font>
-                              <Font name="Corbel Bold" size="17.0" />
+                              <Font name="Outfit Bold" size="18.0" />
                            </font>
                         </JFXButton>
                         <TextField fx:id="searchCrewMember" layoutX="188.0" layoutY="37.0" prefHeight="27.0" prefWidth="366.0" promptText="Search By ID" style="-fx-background-color: white; -fx-border-width: 0px;">
@@ -277,7 +277,7 @@
                         </TextField>
                         <JFXButton buttonType="RAISED" layoutX="566.0" layoutY="37.0" onAction="#searchCrewMember" prefHeight="11.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #5721b5; -fx-text-fill: white;" text="Search" textFill="WHITE">
                            <font>
-                              <Font name="Corbel Bold" size="14.0" />
+                              <Font name="Outfit Bold" size="13.0" />
                            </font>
                         </JFXButton>
                      </children>
